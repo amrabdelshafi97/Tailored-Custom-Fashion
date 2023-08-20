@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Virtual Fitting</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        min-width: 350px;
+        padding: 20px;
+        background-color: #15172b;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .banner {
+        text-align: center;
+        color: white;
+        font-family: monospace;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .col-btn {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .btn-primary {
+        background-color: #08d;
+        border-color: #007bff;
+      }
+
+      .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="col-sm-12 banner">
+        <div class="title">Welcome</div>
+        <div class="subtitle">Virtual Fitting Room</div>
+      </div>
+      <div class="row">
+        <button class="btn btn-primary" id="online-img-btn">
+          Pick an Item
+        </button>
+      </div>
+      <div class="row">
+        <button class="btn btn-primary" id="personal-img-btn">
+          Select Photo of Yours
+        </button>
+      </div>
+      <div class="row">
+        <button class="btn btn-primary" id="merge-btn">Try On Now!</button>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
